@@ -491,7 +491,7 @@
 			<key>IOMatchCategory</key>
 			<string>VoodooI2CNativeEngine</string>
 			<key>IOProviderClass</key>
-			<string>VoodooI2CMultitouchInterface</string>
+			<string>IOService</string>
 		</dict>
 		<key>VoodooI2CACPIController</key>
 		<dict>
