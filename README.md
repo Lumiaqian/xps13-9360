@@ -124,7 +124,7 @@ Clover版本：最新版
 
 ### 安装
 
-参考：https://github.com/AmourHah/XPS9360_Hackintosh或https://github.com/0xHJK/XPS13-9360-i5-8250U-macOS以及[联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
+参考：https://github.com/AmourHah/XPS9360_Hackintosh或https://github.com/0xHJK/XPS13-9360-i5-8250U-macOS 以及 [联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
 
 ### 开启HIDPI
 
