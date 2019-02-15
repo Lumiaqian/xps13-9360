@@ -418,8 +418,6 @@
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>FrequencyMHz</key>
-		<integer>2000</integer>
 		<key>HWPEnable</key>
 		<true/>
 		<key>UseARTFrequency</key>
@@ -431,8 +429,6 @@
 		<array/>
 		<key>Audio</key>
 		<dict>
-			<key>Inject</key>
-			<integer>13</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -549,7 +545,7 @@
 		<string>0x67</string>
 		<key>ROM</key>
 		<data>
-		M0k6owHr
+		3feUg4NQ
 		</data>
 	</dict>
 	<key>SMBIOS</key>
@@ -559,13 +555,13 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1809171524</string>
+		<string>MBP152.88Z.F000.B00.1809171524</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02712501CDHWVP1F</string>
+		<string>C02808108QXJH4R1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -577,7 +573,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>184.0.0.0.0</string>
+		<string>220.200.252.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -600,7 +596,7 @@
 					<key>Serial</key>
 					<string>72DC3603</string>
 					<key>Size</key>
-					<integer>8192</integer>
+					<integer>4096</integer>
 					<key>Slot</key>
 					<integer>1</integer>
 					<key>Type</key>
@@ -616,7 +612,7 @@
 					<key>Serial</key>
 					<string>72DC3304</string>
 					<key>Size</key>
-					<integer>8192</integer>
+					<integer>4096</integer>
 					<key>Slot</key>
 					<integer>2</integer>
 					<key>Type</key>
@@ -631,11 +627,11 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
+		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02TGNZ4HV29</string>
+		<string>C02W9DYNJHCD</string>
 		<key>SmUUID</key>
-		<string>A9096E29-8E4A-4AA5-AA88-1554F3A301EB</string>
+		<string>3D18F676-4D9A-406C-A455-4A67A8838350</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

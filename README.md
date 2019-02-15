@@ -29,7 +29,7 @@ CPU : i5-8250U
 
 BIOS版本 :最新版
 
-系统版本 : 10.14.2
+系统版本 : 10.14.3
 
 Clover版本：最新版
 
@@ -124,7 +124,11 @@ Clover版本：最新版
 
 ### 安装
 
+<<<<<<< HEAD
+参考：https://github.com/AmourHah/XPS9360_Hackintosh或https://github.com/0xHJK/XPS13-9360-i5-8250U-macOS             以及 [联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
+=======
 参考：https://github.com/AmourHah/XPS9360_Hackintosh 或 https://github.com/0xHJK/XPS13-9360-i5-8250U-macOS 以及 [联想小新Air 13安装黑苹果兼macOS Mojave安装教程](https://blog.daliansky.net/Lenovo-Xiaoxin-Air-13-macOS-Mojave-installation-tutorial.html)
+>>>>>>> 22d11a0f98f1b3f12890b7ae43fd7df4f73101d3
 
 ### 开启HIDPI
 
@@ -133,7 +137,8 @@ Clover版本：最新版
 ### 一些问题
 
 1. 声音问题，插入耳机无声音，通过ALCPlugFix解决
-2. 其他问题暂时没有发现
+2. 系统升级无声音，删除`/Library/Extensions/AppleHDA_ALC256.kext`文件，然后用Kext Wizard程序重建缓存即可
+3. 其他问题暂时没有发现
 
 ### 感谢
 
