@@ -73,84 +73,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XDSM (GFX0/IGPU)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					R0ZYMA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU, optionally pair with SSDT-IGPU.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM (HDAS/HDEF)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-					<key>TgtBridge</key>
-					<data>
-					SERBUw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HDAS to HDEF, optionally pair with SSDT-HDEF.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SERBUw==
-					</data>
-					<key>Replace</key>
-					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM (LPCB)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					TFBDQhQbX0RTTQw=
-					</data>
-					<key>Replace</key>
-					<data>
-					TFBDQhQbWERTTQw=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Disabled</key>
 					<false/>
@@ -193,23 +115,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change HECI To IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					U0FUMA==
@@ -357,25 +265,28 @@
 					pABZVEJU
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>i2c</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0NSUw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WENSUw==
+					</data>
+					<key>TgtBridge</key>
+					<data>
+					VFBEMQ==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
-		<key>DropTables</key>
-		<array>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>#TbtTypeC</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>#xh_rvp07</string>
-			</dict>
-		</array>
 		<key>FixHeaders</key>
 		<true/>
 		<key>RenameDevices</key>
@@ -400,49 +311,50 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
-			<string>SSDT-Debug.aml</string>
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-Config.aml</string>
-			<string>SSDT-IGPU.aml</string>
 			<string>SSDT-PNLF.aml</string>
 			<string>SSDT-BRT6.aml</string>
-			<string>SSDT-ALS0.aml</string>
-			<string>SSDT-HDEF.aml</string>
 			<string>SSDT-UIAC.aml</string>
 			<string>SSDT-USBX.aml</string>
 			<string>SSDT-PTSWAK.aml</string>
 			<string>SSDT-PRW.aml</string>
-			<string>#SSDT-NVME.aml</string>
-			<string>SSDT-DMAC.aml</string>
-			<string>SSDT-MCHC.aml</string>
-			<string>SSDT-MEM2.aml</string>
-			<string>SSDT-PMCR.aml</string>
 			<string>SSDT-TYPC.aml</string>
 			<string>SSDT-YTBT.aml</string>
 			<string>SSDT-I2C.aml</string>
-			<string>SSDT-LPC.aml</string>
 			<string>SSDT-SMCD.aml</string>
-			<string>SSDT-BATT.aml</string>
-			<string>SSDT-USBC.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 darkwake=0 igfxcflbklt=opcode -v debug=0x12a</string>
+		<string>darkwake=4 igfxcflbklt=opcode</string>
 		<key>DefaultVolume</key>
-		<string>macOS</string>
+		<string>LastBootedVolume</string>
+		<key>Legacy</key>
+		<string>PBR</string>
 		<key>NeverHibernate</key>
+		<false/>
+		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>2</integer>
+		<integer>4</integer>
 		<key>XMPDetection</key>
 		<integer>1</integer>
+	</dict>
+	<key>BootGraphics</key>
+	<dict>
+		<key>EFILoginHiDPI</key>
+		<integer>2</integer>
+		<key>UIScale</key>
+		<integer>2</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
@@ -459,8 +371,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>AddProperties</key>
-		<array/>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -468,6 +378,52 @@
 		</dict>
 		<key>NoDefaultProperties</key>
 		<false/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
+			<dict>
+				<key>compatible</key>
+				<string>pci8086,9cc1</string>
+				<key>device-id</key>
+				<data>
+				wZwAAA==
+				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>
+				DQAAAA==
+				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAWWQ==
+				</data>
+				<key>device-id</key>
+				<data>
+				FlkAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AADAAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAABQ==
+				</data>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -485,6 +441,8 @@
 			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
+		<key>Language</key>
+		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -497,23 +455,18 @@
 			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
-		<dict>
-			<key>Entries</key>
-			<true/>
-			<key>Linux</key>
-			<true/>
-			<key>Tool</key>
-			<true/>
-		</dict>
+		<true/>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>Mojave</string>
+		<string>Xiaomi</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
 		<key>EDID</key>
 		<dict>
+			<key>HorizontalSyncPulseWidth</key>
+			<string>0x100</string>
 			<key>Inject</key>
 			<false/>
 		</dict>
@@ -526,8 +479,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -547,8 +498,6 @@
 		<false/>
 		<key>KernelXCPM</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
@@ -556,10 +505,10 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
+		<key>MLB</key>
+		<string>C02816501QXJH4RJC</string>
 		<key>ROM</key>
-		<data>
-		zx6zZ8cA
-		</data>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -574,7 +523,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02847404J9JH4RUE</string>
+		<string>C02807303QXJH4RJA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -601,6 +550,41 @@
 		<dict>
 			<key>Channels</key>
 			<integer>2</integer>
+			<key>Modules</key>
+			<array>
+				<dict>
+					<key>Frequency</key>
+					<integer>2133</integer>
+					<key>Part</key>
+					<string>H9CCNNNCLGALAR-NVD</string>
+					<key>Serial</key>
+					<string>72DC3603</string>
+					<key>Size</key>
+					<integer>8192</integer>
+					<key>Slot</key>
+					<integer>1</integer>
+					<key>Type</key>
+					<string>DDR3</string>
+					<key>Vendor</key>
+					<string>SK Hynix</string>
+				</dict>
+				<dict>
+					<key>Frequency</key>
+					<integer>2133</integer>
+					<key>Part</key>
+					<string>H9CCNNNCLGALAR-NVD</string>
+					<key>Serial</key>
+					<string>72DC3304</string>
+					<key>Size</key>
+					<integer>8192</integer>
+					<key>Slot</key>
+					<integer>2</integer>
+					<key>Type</key>
+					<string>DDR3</string>
+					<key>Vendor</key>
+					<string>SK Hynix</string>
+				</dict>
+			</array>
 			<key>SlotCount</key>
 			<integer>2</integer>
 		</dict>
@@ -611,9 +595,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02XQ0KZJHCD</string>
+		<string>C02W80QMJHCD</string>
 		<key>SmUUID</key>
-		<string>4F560DF7-7D0E-4124-9AA7-BEC4BE4B2BFB</string>
+		<string>815DF0FB-D280-409B-9F40-A6CFABCB2918</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
@@ -622,7 +606,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>53867AD9-8BDB-4906-A57D-5025AB3B9225</string>
+		<string>4512DDFE-7EDA-4E1A-A278-C8D45E10B14A</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
