@@ -130,11 +130,6 @@ Clover版本：最新版
 
 使用 [one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 
-### 一些问题
-
-1. 声音问题，插入耳机无声音，通过ALCPlugFix解决
-2. 系统升级无声音，删除`/Library/Extensions/AppleHDA_ALC256.kext`文件，然后用Kext Wizard程序重建缓存即可
-3. 其他问题暂时没有发现
 
 ### 感谢
 
