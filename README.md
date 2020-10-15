@@ -1,4 +1,4 @@
-## MacOS with xps-9360(不在更新)
+## MacOS with xps-9360(不再更新)
 
 ### 运行情况
 
